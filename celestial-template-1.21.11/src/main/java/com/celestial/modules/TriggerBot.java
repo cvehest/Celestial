@@ -4,6 +4,6 @@ import com.celestial.module.Module;
 
 public class TriggerBot extends Module {
     public TriggerBot() {
-        super("TriggerBot", Category.COMBAT);
+        super("TriggerBot", Module.Category.COMBAT);
     }
 }
