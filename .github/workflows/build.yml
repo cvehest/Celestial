@@ -15,8 +15,8 @@ jobs:
           java-version: '21'
       - uses: gradle/actions/setup-gradle@v4
       - name: Build with Gradle
-        run: cd celestial-template-1.21.11 && ./gradlew build
+        run: cd celestial-template-1.21.11 && chmod +x gradlew && ./gradlew build
       - uses: actions/upload-artifact@v4
         with:
           name: Celestial-jar
-         path: celestial-template-1.21.11/build/libs/*[!sources].jar
+          path: celestial-template-1.21.11/build/libs/*[!sources].jar
