@@ -18,10 +18,8 @@ public class CelestialClient implements ClientModInitializer {
     public void onInitializeClient() {
         mc = MinecraftClient.getInstance();
         
-        // Регистрация модулей
         ModuleManager.INSTANCE.addModule(new TriggerBot());
 
-        // Регистрация HUD
         HudElementRegistry.attachElementBefore(
             VanillaHudElements.CHAT,
             Identifier.fromNamespaceAndPath(MOD_ID, "celestial_hud"),
